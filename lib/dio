@@ -1,0 +1,38 @@
+// import 'package:flutter/material.dart';
+// import 'package:dio/dio.dart';
+// import 'dart:convert';
+
+// class LandingPage extends StatefulWidget {
+//   const LandingPage({Key? key});
+
+//   @override
+//   State<LandingPage> createState() => _LandingPageState();
+// }
+
+// class _LandingPageState extends State<LandingPage> {
+//   @override
+//   void initState() {
+//     super.initState();
+//     fetchApiData('https://632017e19f82827dcf24a655.mockapi.io/api/programs');
+//   }
+
+//   void fetchApiData(String url) async {
+//     try {
+//       final response = await Dio().get(url);
+//       // Process the response
+//       final jsonData = response.data;
+//       debugPrint('jsonData is ${jsonEncode(jsonData)}');
+
+//       // Print the value of jsonData['items'][0]['id']
+//       debugPrint('value is ${jsonData['items'][0]['id']}');
+//     } catch (error) {
+//       // Handle error
+//       debugPrint('error is ${error.toString()}');
+//     }
+//   }
+
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold();
+//   }
+// }
